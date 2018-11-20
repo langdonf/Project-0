@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0; 
+}
+
+
+.nav {
+  position:absolute;
+  top:500px;
+  width:100%;
+  background-color: rgba(108, 122, 137, .5)
+}
+
+/* Navbar links */
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1% 7vw;
+  text-decoration: none;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.landing {
+  background-image: url('../images/IMG_6979.jpg');
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing_text {
+  text-align: center;
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.landing_text h1{
+  position: absolute;
+  left: 40%;
+  top: 35%;
+}
+.landing_text h2{
+  position: absolute;
+  left: 40%;
+  top: 45%;
+}
+
+#myCanvas{
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  color: white;
+}
+
+#me{
+  position: absolute;
+  height: 250px;
+  left: 15%;
+  top: 20%;
+  border: 5px solid rgba(108, 122, 137, 1);
+  border-radius: 20px;;
+}
+
+.about{
+  position: absolute;
+  top: 900px;
+}
+div {
+  height: 200px;
+}
+
+.first-color {
+  background-color: #233656;
+  transition: background-color 0.5s ease-in-out;
+  color: #EEF4F2
+}
+
+.second-color {
+  background-color: #415B76;
+  color: #CDD6D5;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.third-color {
+  background-color: #7B9BA6;
+  color: #415B76;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.fourth-color {
+  background-color: #CDD6D5;
+  color: #233656;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.fifth-color{
+  background-color: #EEF4F2;
+  color: darkslategrey;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
