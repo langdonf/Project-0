@@ -146,14 +146,14 @@ li, a {
 
 .me2{
   position: absolute;
-  top: 1000px;
+  top: 1100px;
   right: 10%;
   transition: right .8s ease-in-out;
   border: 5px solid rgba(108, 122, 137, 1);
   border-radius: 20px;;
 }
 
-div {
+.spacer {
   height: 200px;
 }
 

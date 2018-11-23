@@ -98,6 +98,16 @@ window.onload = function() {
 ////////////////////////////http://www.goat1000.com/tagcanvas.php/////////////////////////////////
 
 $(document).ready(function(){
-  $('.carousel').carousel();
+  $('.carousel .carousel-slider').carousel(
+    {
+      dist: 0,
+      padding: 0,
+      fullWidth: true,
+      indicators: true,
+      duration: 100,
+    }
+  );
 });
+
+
 

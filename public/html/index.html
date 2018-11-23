@@ -5,22 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="../js/materialize.js"  media="screen,projection"/>
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/materialize.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.js" 
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script src="../js/main.js"></script>
-  <script src="../js/jQueryTagCanvas.js"></script>
-
+  <script src="../js/materialize.js"></script> 
+  
+  <script src="../js/jQueryTagCanvas.js"></script>  
+  
+ 
+  
 </head>
 <body class="first-color">
   
@@ -50,7 +50,7 @@
   <header>
     <nav id="nav" class="nav">
       <a href="#" >home</a>
-      <a href="#nav" >about</a>
+      <a href="#" >about</a>
       <a href="#" >past work</a>
       <a href="#" >testimonials</a>
       <a href="#" >contact</a>
@@ -59,70 +59,83 @@
         <a id="arr" class="fa fa-arrow-down fa-2x" href="#"></a>
       </div>
   </header>
-  <section class="content">
-    <article id="about" class="hidden_left">
-      <h2>About Me</h2>
-      <p>
+  <article id="about" class="hidden_left">
+    <h2>About Me</h2>
+    <p>
+      I’m an aspiring full stack developer who is logic oriented with an eye for design. I am motivated by challenging situations, solving problems and looking for improvements to efficiency. I spent 10 years in the food industry the majority of which helping to run a small mom and pop butcher where I learned the importance of efficiency and tenacity. Currently I am most proficient at html, css, sass, js and jquery and am learning python. </p>
+    <p>
         I’m an aspiring full stack developer who is logic oriented with an eye for design. I am motivated by challenging situations, solving problems and looking for improvements to efficiency. I spent 10 years in the food industry the majority of which helping to run a small mom and pop butcher where I learned the importance of efficiency and tenacity. Currently I am most proficient at html, css, sass, js and jquery and am learning python. </p>
-      <p>
-          I’m an aspiring full stack developer who is logic oriented with an eye for design. I am motivated by challenging situations, solving problems and looking for improvements to efficiency. I spent 10 years in the food industry the majority of which helping to run a small mom and pop butcher where I learned the importance of efficiency and tenacity. Currently I am most proficient at html, css, sass, js and jquery and am learning python. </p>
-
-      
-    </article>
-    <img id="me2" class="hidden_right" src="../images/IMG_6325.jpg" alt="">
-   
-    <section class="carousel">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="../images/project1.png"></a>
-          <a class="carousel-item" href="#two!"><img src="../images/project2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="../images/project3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="../images/project1.png"></a>
-          <a class="carousel-item" href="#five!"><img src="../images/project2.png"></a>
-        </div>
-    </section>
-    <article class="testies">
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
-      <div class="spacer"></div>
 
     
+  </article>
+  <img id="me2" class="hidden_right" src="../images/IMG_6325.jpg" alt="">
+  
+  <section class="projects">
+      <div class="carousel">
+        <a class="carousel-item" href="#"><img src="../images/project1.png"></a>
+        <a class="carousel-item" href="#"><img src="../images/project2.png"></a>
+        <a class="carousel-item" href="#"><img src="../images/project3.png"></a>
+        <a class="carousel-item" href="#"><img src="../images/project1.png"></a>
+        <a class="carousel-item" href="#"><img src="../images/project2.png"></a>
+      </div>
+  </section>
+  
+  <article class="testies">
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div><div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div><div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div><div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div><div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
+    <div class="spacer"> </div>
 
-    </article>
-    <footer>
+  </article>
+  <footer>
 
-    </footer>
-    
-  </section>   
-  <script type="text/javascript" src="js/materialize.min.js"></script>                                                                   
+  </footer>   
+                                                              
 </body>
 </html>
