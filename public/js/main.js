@@ -12,23 +12,24 @@ var section1 = function(){
 var section2 = function(){
   $('body').removeClass()
   $('body').addClass('second-color')
+  
+  $('#arr').addClass('hide')
+}
+var section3 = function(){
   $('#about').removeClass('hidden_left')
   $('#about').addClass('about')
   $('#me2').removeClass('hidden_right')
   $('#me2').addClass('me2')
-  $('#arr').addClass('hide')
-}
-var section3 = function(){
-  $('#about').addClass('hidden_left')
-  $('#about').removeClass('about')
-  $('#me2').addClass('hidden_right')
-  $('#me2').removeClass('me2')
   $('body').removeClass()
   $('body').addClass('third-color')
 }
 var section4 = function(){
   $('body').removeClass()
-    $('body').addClass('fourth-color')
+  $('body').addClass('fourth-color')
+  $('#about').addClass('hidden_left')
+  $('#about').removeClass('about')
+  $('#me2').addClass('hidden_right')
+  $('#me2').removeClass('me2')
 }
 var section5 = function(){
   $('body').removeClass()
@@ -44,14 +45,19 @@ $(window).scroll(function () {
   console.log(scroll);
   if (scroll <= 250){
     section1()
-  } if (scroll >= 250  && scroll <= 1250){
+    console.log('section1')
+  } if (scroll >= 250  && scroll <= 1450){
     section2()
-  } if (scroll >= 1251 && scroll <= 1500){
+    console.log('section2')
+  } if (scroll >= 1451 && scroll <= 1980){
     section3()
-  } if (scroll >= 2101 && scroll <= 2800){
+    console.log('section3')
+  } if (scroll >= 1981 && scroll <= 2800){
     section4()
+    console.log('section4')
   } if (scroll >= 2800){
     section5()
+    console.log('section5')
   }
 });
 
@@ -59,14 +65,18 @@ var num1 = 700;
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num1) {
-        $('.nav').addClass('sticky');
+        $('.navbar').addClass('sticky');
     } else {
-        $('.nav').removeClass('sticky');
+        $('.navbar').removeClass('sticky');
     }
 });
 
 
-
+$(document).ready(function(){
+  $('.carousel').carousel(
+    
+  );
+});
 
 
 
@@ -97,17 +107,6 @@ window.onload = function() {
 
 ////////////////////////////http://www.goat1000.com/tagcanvas.php/////////////////////////////////
 
-$(document).ready(function(){
-  $('.carousel .carousel-slider').carousel(
-    {
-      dist: 0,
-      padding: 0,
-      fullWidth: true,
-      indicators: true,
-      duration: 100,
-    }
-  );
-});
 
 
 
