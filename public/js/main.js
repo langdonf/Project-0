@@ -93,9 +93,9 @@ var num1 = 700;
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num1) {
-      $('.navbar').addClass('sticky');
+      $('.navbar1').addClass('sticky');
   } else {
-      $('.navbar').removeClass('sticky');
+      $('.navbar1').removeClass('sticky');
   } 
 });
 
