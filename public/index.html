@@ -20,11 +20,26 @@
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/jQueryTagCanvas.js"></script>  
-  <
   
   
 </head>
 <body class="first-color">
+  <div class="navbar-fixed">
+    <section class="navbarmobile pinned">
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-trigger btn grey' href='#' data-target='dropdown1'><i class="material-icons">menu</i></a>
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Past Work</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </section> 
+  </div>
   <section class="landing">
     <img id="me" src="images/IMG_6093.jpg"/>
     <article class="landing_text">
@@ -47,26 +62,30 @@
           </div>
     </article>
   </section>
-  
+
   <header>
-    <nav class="navbar">
-      <a href="#" >home</a>
-      <a href="#" >about</a>
-      <a href="#" >past work</a>
-      <a href="#" >testimonials</a>
-      <a href="#" >contact</a>
+    <nav class="navbar1">
+      <a class="waves-effect waves-light btn-flt" href="#" >home</a>
+      <a class="waves-effect waves-light btn-flt" href="#about" >about</a>
+      <a class="waves-effect waves-light btn-flt" href="#projects" >past work</a>
+      <a class="waves-effect waves-light btn-flt" href="#testimonials" >testimonials</a>
+      <a class="waves-effect waves-light btn-flt" href="#contact" >contact</a>
     </nav>
     <div class="arrow bounce">
         <a id="arr" class="fa fa-arrow-down fa-2x" href="#"></a>
-      </div>
+    </div>
   </header>
-  <section class="projects">
+  <section id="projects" class="projects">
       <div class="carousel carousel-slider">
-        <a class="carousel-item" href="#one!"><img src="images/project1.png"></a>
-        <a class="carousel-item" href="#two!"><img src="images/project2.png"></a>
-        <a class="carousel-item" href="#three!"><img src="images/project3.png"></a>
+        <a id="project1" class="carousel-item" href="#one!"><img src="images/project1.png"></a>
+        <a id="project2" class="carousel-item" href="#two!"><img src="images/project2.png"></a>
+        <a id="project3" class="carousel-item" href="#three!"><img src="images/project3.png"></a>
       </div>
-      
+      <section id="gallery">
+        <img id="proj1" class="materialboxed"  src="images/proj1.png">
+        <img id="proj2" class="materialboxed"  src="images/proj2.png">
+        <img id="proj3" class="materialboxed"  src="images/proj3.png">
+      </section>
   </section>
   <article id="about" class="hidden_left">
     <h2>About Me</h2>
@@ -80,12 +99,64 @@
   <img id="me2" class="hidden_right" src="images/IMG_6325.jpg" alt="">
  
 
-  <article class="testies">
-   
+  <article id="testimonials" class="testies scale-transition scale-out">
+      <ul class="collapsible popout">
+          <li class="active">
+            <div class="collapsible-header"><i class="material-icons">filter_drama</i>Testimonial 1</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, similique autem architecto doloribus quo enim, animi totam labore cumque, in maxime dolorum libero rerum placeat exercitationem asperiores fugit officia beatae.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">place</i>Testimonial 2</div>
+            <div class="collapsible-body"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora velit vero facere. Voluptatem dignissimos suscipit ipsa qui tempora vitae voluptates, laborum magnam architecto dolorem neque dolore cum explicabo, nihil deserunt.</p></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">whatshot</i>Testimonial 3</div>
+            <div class="collapsible-body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam dolore ea soluta, odio minus temporibus esse sit voluptatum. At placeat asperiores iure necessitatibus optio nostrum commodi perspiciatis! Ullam?</p></div>
+          </li>
+          <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Testimonial 2</div>
+              <div class="collapsible-body"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora velit vero facere. Voluptatem dignissimos suscipit ipsa qui tempora vitae voluptates, laborum magnam architecto dolorem neque dolore cum explicabo, nihil deserunt.</p></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Testimonial 3</div>
+              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestiae aliquam dolore ea soluta, odio minus temporibus esse sit voluptatum. At placeat asperiores iure necessitatibus optio nostrum commodi perspiciatis! Ullam?</p></div>
+            </li>
+        </ul>
   </article>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Comment</label>
+            </div>
+        </div>
+        <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    
+      </form>
+  </section>
   <footer>
 
   </footer>   
-                                                              
+  
 </body>
 </html>

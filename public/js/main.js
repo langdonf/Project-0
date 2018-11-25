@@ -12,16 +12,24 @@ var section1 = function(){
 var section2 = function(){
   $('body').removeClass()
   $('body').addClass('second-color')
-  
   $('#arr').addClass('hide')
+  $('#gallery').removeClass('hide')
+  $('#about').addClass('hidden_left')
+  $('#about').removeClass('about')
+  $('#me2').addClass('hidden_right')
+  $('#me2').removeClass('me2')
 }
 var section3 = function(){
   $('#about').removeClass('hidden_left')
   $('#about').addClass('about')
+  $('#gallery').addClass('hide')
   $('#me2').removeClass('hidden_right')
   $('#me2').addClass('me2')
   $('body').removeClass()
   $('body').addClass('third-color')
+  $('#testimonials').removeClass('scale-in')
+  $('#testimonials').addClass('scale-out')
+  
 }
 var section4 = function(){
   $('body').removeClass()
@@ -30,13 +38,28 @@ var section4 = function(){
   $('#about').removeClass('about')
   $('#me2').addClass('hidden_right')
   $('#me2').removeClass('me2')
+  $('#contact').addClass('hidden_bottom')
+  $('#contact').removeClass('contact')
+  $('#testimonials').removeClass('scale-out')
+  $('#testimonials').addClass('scale-in')
+  
 }
 var section5 = function(){
   $('body').removeClass()
   $('body').addClass('fifth-color')
+  $('#contact').removeClass('hidden_bottom')
+  $('#contact').addClass('contact')
+  $('#testimonials').removeClass('scale-in')
+  $('#testimonials').addClass('scale-out')
 }
 
-
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+  $('.dropdown-trigger').dropdown({
+    constrainWidth: false,
+  });
+  
+});
 
 
 
@@ -46,16 +69,16 @@ $(window).scroll(function () {
   if (scroll <= 250){
     section1()
     console.log('section1')
-  } if (scroll >= 250  && scroll <= 1450){
+  } if (scroll >= 250  && scroll <= 1200){
     section2()
     console.log('section2')
-  } if (scroll >= 1451 && scroll <= 1980){
+  } if (scroll >= 1201 && scroll <= 2400){
     section3()
     console.log('section3')
-  } if (scroll >= 1981 && scroll <= 2800){
+  } if (scroll >= 2401 && scroll <= 3200){
     section4()
     console.log('section4')
-  } if (scroll >= 2800){
+  } if (scroll >= 3201){
     section5()
     console.log('section5')
   }
@@ -63,20 +86,34 @@ $(window).scroll(function () {
 
 var num1 = 700; 
 
+
+
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num1) {
-        $('.navbar').addClass('sticky');
-    } else {
-        $('.navbar').removeClass('sticky');
-    }
+      $('.navbar').addClass('sticky');
+  } else {
+      $('.navbar').removeClass('sticky');
+  } 
 });
 
 
 $(document).ready(function(){
   $('.carousel').carousel(
-    
+    { fullWidth: true,
+      indicators: true,
+    }
   );
+  /* autoplay();
+  function autoplay() {
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 4500);
+  }; */
+  
 });
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
+      
 
 
 
