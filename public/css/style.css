@@ -10,10 +10,8 @@ body{
 html {
   scroll-behavior: smooth;
   height: 4450px;
-  
   line-height: 0;
 }
-
 
 .hidden_bottom {
   text-align: center;
@@ -98,7 +96,6 @@ h1, h2, p{
   border-radius: 20px;
 }
 
-
 .fa-arrow-down{
   position: absolute;
   left: 50%;
@@ -151,9 +148,11 @@ li, a {
 .navbar-fixed{
   display: none;
 }
+
 .dropdown-content li a{
   color: #3F5C7D 
 }
+
 /* ///////////////ABOUT//////////////// */
 .about{
   position: absolute;
@@ -179,7 +178,6 @@ li, a {
 /* /////////Projects////////// */
 
 
-
 .carousel.carousel-slider {
   top: 180px;
 }
@@ -203,6 +201,8 @@ li, a {
   box-shadow: 12px 12px 19px rgba(0,0,0,0.2);
   
 }
+
+/* ////////////////Testimonials///////////// */
 .testies{
   position: absolute;
   top: 2800px;
@@ -222,6 +222,8 @@ li, a {
   color: black;
 }
 
+
+/* /////////////////Contact//////////////// */
 .contact{
   position: absolute;
   top: 3650px;
@@ -240,7 +242,7 @@ li, a {
   margin: -120px 0 60px 0;
 }
 
-
+/* ///////////background colors/////////////// */
 
 .fifth-color {
   background-color: #233656;
@@ -266,6 +268,7 @@ li, a {
   background-color: #333335;
   transition: background-color 0.5s ease-in-out;
 }
+/* ////////////Dropdown media queries//////////// */
 
 @media only screen and (max-width: 860px){
   .navbar1{

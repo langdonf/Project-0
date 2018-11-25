@@ -53,13 +53,15 @@ var section5 = function(){
   $('#testimonials').addClass('scale-out')
 }
 
+
+////////////DROPDOWN INITIALIZATION HERE///////////////////////
 $(document).ready(function(){
   $('.collapsible').collapsible();
   $('.dropdown-trigger').dropdown({
     constrainWidth: false,
   });
-  
 });
+///////////////////////////////////////////////////////////////
 
 
 
@@ -84,6 +86,7 @@ $(window).scroll(function () {
   }
 });
 
+///////////////Sticky Nav////////////////
 var num1 = 700; 
 
 
@@ -96,7 +99,7 @@ $(window).bind('scroll', function () {
   } 
 });
 
-
+///////////////Carousel//////////////////
 $(document).ready(function(){
   $('.carousel').carousel(
     { fullWidth: true,
@@ -120,7 +123,7 @@ $(document).ready(function(){
 
 
 
-
+///////////Word cloud/////////////
 //////////////////////////http://www.goat1000.com/tagcanvas.php////////////////////////
 window.onload = function() {
   try {
