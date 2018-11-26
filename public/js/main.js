@@ -21,6 +21,7 @@ var section2 = function(){
   $('.navbar1 a:nth-child(2)').addClass('second-color');
   $('.navbar1 a:nth-child(1)').removeClass('first-color');
   $('.navbar1 a:nth-child(3)').removeClass('third-color');
+  $('.navbar1 a:nth-child(3)').removeClass('abouttag');
 }
 
 var section3 = function(){
@@ -32,6 +33,7 @@ var section3 = function(){
   $('#me2').addClass('me2');
   $('.navbar1 a:nth-child(2)').removeClass('second-color');
   $('.navbar1 a:nth-child(3)').addClass('third-color');
+  $('.navbar1 a:nth-child(3)').addClass('abouttag');
   $('.navbar1 a:nth-child(4)').removeClass('fourth-color');
   $('#testimonials').removeClass('scale-in');
   $('#testimonials').addClass('scale-out');
@@ -44,9 +46,11 @@ var section4 = function(){
   $('#about').removeClass('about');
   $('#me2').addClass('hidden_right');
   $('#me2').removeClass('me2');
+  $('.navbar1 a:nth-child(3)').removeClass('abouttag');
   $('.navbar1 a:nth-child(3)').removeClass('third-color');
   $('.navbar1 a:nth-child(4)').addClass('fourth-color');
   $('.navbar1 a:nth-child(5)').removeClass('fifth-color');
+
   $('#testimonials').removeClass('scale-out');
   $('#testimonials').addClass('scale-in');
   $('#contact').addClass('hidden_bottom');

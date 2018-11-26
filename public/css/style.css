@@ -72,7 +72,7 @@ h1, h2, p{
 
 .landing_text h1{
   position: absolute;
-  font-size: 2em;
+  font-size: 2.2em;
   top: 34%;
   left: 35%;
 }
@@ -81,7 +81,7 @@ h1, h2, p{
   position: absolute;
   top: 37%;
   left: 40%;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: #233656;
 }
 
@@ -99,6 +99,7 @@ h1, h2, p{
   top: 30%;
   border: 5px solid rgba(108, 122, 137, 1);
   border-radius: 20px;
+  
 }
 
 .fa-angle-down{
@@ -123,6 +124,9 @@ li, a{
   text-decoration: none;
   color: white;
   padding: 10px 0; 
+}
+.abouttag{
+  color: #243552 !important;
 }
 
 .navbar1{
@@ -218,7 +222,7 @@ li, a{
   width: 80vw;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-  color: #DBE1E7
+  color: #DBE1E7;
 }
 
 .collapsible-header{

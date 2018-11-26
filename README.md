@@ -153,7 +153,4 @@ var section5 = function(){
 
 Free to use
 
-## Acknowledgments
-
-* [Helped me figure out generating random date in the right format](https://apod.nasa.gov/apod/random_apod.html)
 
