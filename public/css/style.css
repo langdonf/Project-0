@@ -79,7 +79,7 @@ h1, h2, p{
 
 .landing_text h2{
   position: absolute;
-  top: 38%;
+  top: 37%;
   left: 40%;
   font-size: 1.2em;
   color: #233656;
@@ -101,7 +101,7 @@ h1, h2, p{
   border-radius: 20px;
 }
 
-.fa-arrow-down{
+.fa-angle-down{
   position: absolute;
   left: 50%;
   bottom: 5%;
@@ -113,7 +113,7 @@ h1, h2, p{
 
 @keyframes bounce{
   from { transform: translate3d(0, 0, 0); }
-  to   { transform: translate3d(0, 40px, 0); }
+  to   { transform: translate3d(0, 50px, 0); }
 }
 
 /* ///////////////////NAV/////////////////////// */
@@ -130,9 +130,10 @@ li, a{
   top: 700px;
   width:100%;
   height: 40px;
-  background-color: rgba(108, 122, 137, .9);
+  background-color: rgba(0, 0, 0, .4);
   z-index: 20;
   line-height: 60px;
+  box-shadow: none;
 }
 
 .navbar1 a{
@@ -144,6 +145,7 @@ li, a{
   padding: 10px 8vw 7px 8vw;
   line-height: 1em;
   height: 40px;
+  border-radius: 8px 8px 0 0;
 }
 
 .sticky{
@@ -216,6 +218,7 @@ li, a{
   width: 80vw;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
+  color: #DBE1E7
 }
 
 .collapsible-header{
@@ -477,15 +480,11 @@ li, a{
 }
 
 @media only screen and (max-width: 480px){
-  .me2{
-    top: 2180px;
-    right: 20%;
-  }
-
+  
   #myCanvas{
     position: absolute;
     right: 10%;
-    top: 54%;
+    top: 44%;
     color: white;
   }
   
@@ -493,11 +492,17 @@ li, a{
     position: absolute;
     height: 250px;
     left: 22%;
-    top: 2%;
+    top: 22%;
     border: 5px solid rgba(108, 122, 137, 1);
     border-radius: 20px;
     z-index: 101;
   }
+
+  .me2{
+    top: 2180px;
+    right: 20%;
+  }
+
   .contact h2{
     margin: -60px 0 20px 0;
   }
