@@ -67,7 +67,7 @@ var section5 = function(){
 }
 
 
-////////////DROPDOWN INITIALIZATION HERE///////////////////////
+////////////Materialize Dropdown Menu, carousel, and lightbox Initializations ///////////////////////
 $(document).ready(function(){
   $('.collapsible').collapsible();
   $('.dropdown-trigger').dropdown({
@@ -87,8 +87,6 @@ $(document).ready(function(){
   
 });
 ///////////////////////////////////////////////////////////////
-
-
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -113,9 +111,6 @@ $(window).scroll(function () {
 
 ///////////////Sticky Nav////////////////
 var num1 = 700; 
-
-
-
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num1) {
       $('.navbar1').addClass('sticky');
@@ -123,16 +118,8 @@ $(window).bind('scroll', function () {
       $('.navbar1').removeClass('sticky');
   } 
 });
-
-      
-
-
-
-
-
-
 ///////////Word cloud/////////////
-//////////////////////////http://www.goat1000.com/tagcanvas.php////////////////////////
+///////////////////http://www.goat1000.com/tagcanvas.php////////////////////////
 window.onload = function() {
   try {
     TagCanvas.Start('myCanvas');
