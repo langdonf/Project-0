@@ -1,4 +1,4 @@
-
+var $navbardrk = '#424242 grey darken-3'
 
 var section1 = function(){
   $('body').removeClass()
@@ -8,12 +8,16 @@ var section1 = function(){
   $('#me2').addClass('hidden_right')
   $('#me2').removeClass('me2')
   $('#arr').removeClass('hide')
+  $('.navbar1 a:nth-child(1)').addClass($navbardrk)
+  $('.navbar1 a:nth-child(2)').removeClass($navbardrk)
 }
 var section2 = function(){
   $('body').removeClass()
   $('body').addClass('second-color')
   $('#arr').addClass('hide')
-  $('#gallery').removeClass('hide')
+  $('.navbar1 a:nth-child(2)').addClass($navbardrk)
+  $('.navbar1 a:nth-child(1)').removeClass($navbardrk)
+  $('.navbar1 a:nth-child(3)').removeClass($navbardrk)
   $('#about').addClass('hidden_left')
   $('#about').removeClass('about')
   $('#me2').addClass('hidden_right')
@@ -22,8 +26,10 @@ var section2 = function(){
 var section3 = function(){
   $('#about').removeClass('hidden_left')
   $('#about').addClass('about')
-  $('#gallery').addClass('hide')
   $('#me2').removeClass('hidden_right')
+  $('.navbar1 a:nth-child(2)').removeClass($navbardrk)
+  $('.navbar1 a:nth-child(3)').addClass($navbardrk)
+  $('.navbar1 a:nth-child(4)').removeClass($navbardrk)
   $('#me2').addClass('me2')
   $('body').removeClass()
   $('body').addClass('third-color')
@@ -34,6 +40,9 @@ var section3 = function(){
 var section4 = function(){
   $('body').removeClass()
   $('body').addClass('fourth-color')
+  $('.navbar1 a:nth-child(3)').removeClass($navbardrk)
+  $('.navbar1 a:nth-child(4)').addClass($navbardrk)
+  $('.navbar1 a:nth-child(5)').removeClass($navbardrk)
   $('#about').addClass('hidden_left')
   $('#about').removeClass('about')
   $('#me2').addClass('hidden_right')
@@ -51,6 +60,10 @@ var section5 = function(){
   $('#contact').addClass('contact')
   $('#testimonials').removeClass('scale-in')
   $('#testimonials').addClass('scale-out')
+  $('.navbar1 a:nth-child(4)').removeClass($navbardrk)
+  $('.navbar1 a:nth-child(5)').addClass($navbardrk)
+  
+
 }
 
 
@@ -60,6 +73,18 @@ $(document).ready(function(){
   $('.dropdown-trigger').dropdown({
     constrainWidth: false,
   });
+  $('.carousel').carousel(
+    { fullWidth: true,
+      indicators: true,
+    }
+  );
+  autoplay();
+  function autoplay() {
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 4500);
+  };
+  $('.materialboxed').materialbox();
+  
 });
 ///////////////////////////////////////////////////////////////
 
@@ -74,10 +99,10 @@ $(window).scroll(function () {
   } if (scroll >= 250  && scroll <= 1200){
     section2()
     console.log('section2')
-  } if (scroll >= 1201 && scroll <= 2400){
+  } if (scroll >= 1201 && scroll <= 2300){
     section3()
     console.log('section3')
-  } if (scroll >= 2401 && scroll <= 3200){
+  } if (scroll >= 2301 && scroll <= 3200){
     section4()
     console.log('section4')
   } if (scroll >= 3201){
@@ -99,23 +124,6 @@ $(window).bind('scroll', function () {
   } 
 });
 
-///////////////Carousel//////////////////
-$(document).ready(function(){
-  $('.carousel').carousel(
-    { fullWidth: true,
-      indicators: true,
-    }
-  );
-  /* autoplay();
-  function autoplay() {
-      $('.carousel').carousel('next');
-      setTimeout(autoplay, 4500);
-  }; */
-  
-});
-$(document).ready(function(){
-  $('.materialboxed').materialbox();
-});
       
 
 

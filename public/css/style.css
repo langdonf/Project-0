@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  
 }
 body{
   width: 100vw;
@@ -28,7 +28,7 @@ html {
 .hidden_left {
   left: -100vw;
   position: absolute;
-  top: 1800px;
+  top: 1900px;
   width: 50%;
   font-size: 1.4em;
   color: #EEF4F2;
@@ -37,14 +37,14 @@ html {
 
 .hidden_right{
   position: absolute;
-  top: 1900px;
+  top: 2000px;
   right: -100vw;
   transition: right .8s ease-in-out;
 }
 
 h1, h2, p{
   line-height: initial;
-  font-family: 'Nunito Sans', sans-serif;
+  
 }
 /* //////////////Header///////////////// */
 .landing {
@@ -69,16 +69,17 @@ h1, h2, p{
 .landing_text h1{
   position: absolute;
   font-size: 2em;
-  top: 42%;
+  top: 34%;
   left: 35%;
 }
 .landing_text h2{
   position: absolute;
-  top: 48%;
+  top: 38%;
   left: 40%;
   font-size: 1.2em;
   color: #233656
 }
+
 
 #myCanvas{
   position: absolute;
@@ -135,8 +136,9 @@ li, a {
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
-  padding: 10px 7vw;
+  padding: 10px 8vw 7px 8vw;
   line-height: 1em;
+  height: 40px;
 }
 
 .sticky {
@@ -156,7 +158,7 @@ li, a {
 /* ///////////////ABOUT//////////////// */
 .about{
   position: absolute;
-  top: 1800px;
+  top: 1900px;
   width: 50%;
   left: 10%;
   font-size: 1.4em;
@@ -167,7 +169,7 @@ li, a {
 
 .me2{
   position: absolute;
-  top: 1900px;
+  top: 2000px;
   right: 10%;
   transition: right .8s ease-in-out;
   border: 5px solid rgba(108, 122, 137, 1);
@@ -240,6 +242,12 @@ li, a {
 
 .contact h2{
   margin: -120px 0 60px 0;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #3F5C7D
+}
+
+#social{
+  margin: 40px 0 -100px 0;
 }
 
 /* ///////////background colors/////////////// */
@@ -268,9 +276,73 @@ li, a {
   background-color: #333335;
   transition: background-color 0.5s ease-in-out;
 }
+
+
 /* ////////////Dropdown media queries//////////// */
 
-@media only screen and (max-width: 860px){
+@media only screen and (min-width: 1650px){
+  .about{
+    position: absolute;
+    top: 1950px;
+  }
+
+}
+@media only screen and (max-width: 1365px){
+  .navbar1 a {
+    padding: 10px 7vw;
+  }
+  .landing_text h1{
+    position: absolute;
+    font-size: 2.2em;
+    top: 8%;
+    left: 30%;
+  }
+  .landing_text h2{
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    font-size: 1.4em;
+    color: #233656
+  }
+  
+  #myCanvas{
+    position: absolute;
+    right: 12%;
+    top: 24%;
+    color: white;
+  }
+  
+  #me{
+    position: absolute;
+    height: 250px;
+    left: 12%;
+    top: 30%;
+    border: 5px solid rgba(108, 122, 137, 1);
+    border-radius: 20px;
+  }
+  .about{
+    position: absolute;
+    top: 1800px;
+    width: 50%;
+    left: 8%;
+    font-size: 1.4em;
+    color: #3F5C7D;
+    transition: left .8s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .me2{
+    position: absolute;
+    top: 1900px;
+    right: 8%;
+    transition: right .8s ease-in-out;
+    border: 5px solid rgba(108, 122, 137, 1);
+    border-radius: 20px;
+    
+  }
+  
+}
+@media only screen and (max-width: 920px){
   .navbar1{
     display: none;
   }
@@ -282,8 +354,141 @@ li, a {
     height: 50px;
     padding: 10px;
   }
+
   .btn{
     font-size: 2em;
+  }
+  .landing_text h1{
+    position: absolute;
+    font-size: 2.2em;
+    top: 8%;
+    left: 30%;
+  }
+  .landing_text h2{
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    font-size: 1.4em;
+    color: #233656
+  }
+
+  
+  #myCanvas{
+    position: absolute;
+    right: 5%;
+    top: 24%;
+    color: white;
+  }
+  
+  #me{
+    position: absolute;
+    height: 250px;
+    left: 8%;
+    top: 30%;
+    border: 5px solid rgba(108, 122, 137, 1);
+    border-radius: 20px;
+  }
+  
+  
+  .about{
+    position: absolute;
+    top: 1500px;
+    width: 80%;
+    left: 10%;
+    font-size: 1.4em;
+    color: #3F5C7D;
+    transition: left .8s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .me2{
+    position: absolute;
+    top: 1950px;
+    right: 32%;
+    transition: right .8s ease-in-out;
+    border: 5px solid rgba(108, 122, 137, 1);
+    border-radius: 20px;
+    
+  }
+  #gallery {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  #gallery img{
+    position: relative;
+    top: 250px;
+    width: 85%;
+    margin: 6%;
+    border-radius: 10px;
+    box-shadow: 12px 12px 19px rgba(0,0,0,0.2);
+    
+  }
+  .contact h2{
+    margin: -100px 0 20px 0;
+  }
+  
+  
+
+}
+@media only screen and (max-width: 660px){
+  .me2{
+    top: 2050px;
+    right: 28%;
+  }
+  #myCanvas{
+    position: absolute;
+    right: 2%;
+    top: 24%;
+    color: white;
+
+  }
+  
+  #me{
+    position: absolute;
+    height: 250px;
+    left: 2%;
+    top: 30%;
+    border: 5px solid rgba(108, 122, 137, 1);
+    border-radius: 20px;
+    z-index: 101;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .me2 {
+    top: 2080px;
+    right: 24%
+  }
+
+  .contact h2{
+    margin: -80px 0 20px 0;
+  }
+}
+@media only screen and (max-width: 480px){
+  .me2 {
+    top: 2180px;
+    right: 20%;
+  }
+  #myCanvas{
+    position: absolute;
+    right: 10%;
+    top: 54%;
+    color: white;
+  }
+  
+  #me{
+    position: absolute;
+    height: 250px;
+    left: 22%;
+    top: 2%;
+    border: 5px solid rgba(108, 122, 137, 1);
+    border-radius: 20px;
+    z-index: 101;
+  }
+  .contact h2{
+    margin: -60px 0 20px 0;
   }
 }
 
