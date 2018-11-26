@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Pulls from three APIs to show a random APOD and the people currently in space represented by pictures of dogs.
+Website to showcase abilities and past work.
 
 
 #### Requirements
