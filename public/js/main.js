@@ -1,92 +1,93 @@
-var $navbardrk = '#424242 grey darken-3'
-
 var section1 = function(){
-  $('body').removeClass()
-  $('body').addClass('first-color')
-  $('#about').addClass('hidden_left')
-  $('#about').removeClass('about')
-  $('#me2').addClass('hidden_right')
-  $('#me2').removeClass('me2')
-  $('#arr').removeClass('hide')
-  $('.navbar1 a:nth-child(1)').addClass($navbardrk)
-  $('.navbar1 a:nth-child(2)').removeClass($navbardrk)
+  $('body').removeClass();
+  $('body').addClass('first-color');
+  $('#about').addClass('hidden_left');
+  $('#about').removeClass('about');
+  $('#me2').addClass('hidden_right');
+  $('#me2').removeClass('me2');
+  $('#arr').removeClass('hide');
+  $('.navbar1 a:nth-child(1)').addClass('first-color');
+  $('.navbar1 a:nth-child(2)').removeClass('second-color');
 }
-var section2 = function(){
-  $('body').removeClass()
-  $('body').addClass('second-color')
-  $('#arr').addClass('hide')
-  $('.navbar1 a:nth-child(2)').addClass($navbardrk)
-  $('.navbar1 a:nth-child(1)').removeClass($navbardrk)
-  $('.navbar1 a:nth-child(3)').removeClass($navbardrk)
-  $('#about').addClass('hidden_left')
-  $('#about').removeClass('about')
-  $('#me2').addClass('hidden_right')
-  $('#me2').removeClass('me2')
-}
-var section3 = function(){
-  $('#about').removeClass('hidden_left')
-  $('#about').addClass('about')
-  $('#me2').removeClass('hidden_right')
-  $('.navbar1 a:nth-child(2)').removeClass($navbardrk)
-  $('.navbar1 a:nth-child(3)').addClass($navbardrk)
-  $('.navbar1 a:nth-child(4)').removeClass($navbardrk)
-  $('#me2').addClass('me2')
-  $('body').removeClass()
-  $('body').addClass('third-color')
-  $('#testimonials').removeClass('scale-in')
-  $('#testimonials').addClass('scale-out')
-  
-}
-var section4 = function(){
-  $('body').removeClass()
-  $('body').addClass('fourth-color')
-  $('.navbar1 a:nth-child(3)').removeClass($navbardrk)
-  $('.navbar1 a:nth-child(4)').addClass($navbardrk)
-  $('.navbar1 a:nth-child(5)').removeClass($navbardrk)
-  $('#about').addClass('hidden_left')
-  $('#about').removeClass('about')
-  $('#me2').addClass('hidden_right')
-  $('#me2').removeClass('me2')
-  $('#contact').addClass('hidden_bottom')
-  $('#contact').removeClass('contact')
-  $('#testimonials').removeClass('scale-out')
-  $('#testimonials').addClass('scale-in')
-  
-}
-var section5 = function(){
-  $('body').removeClass()
-  $('body').addClass('fifth-color')
-  $('#contact').removeClass('hidden_bottom')
-  $('#contact').addClass('contact')
-  $('#testimonials').removeClass('scale-in')
-  $('#testimonials').addClass('scale-out')
-  $('.navbar1 a:nth-child(4)').removeClass($navbardrk)
-  $('.navbar1 a:nth-child(5)').addClass($navbardrk)
-  
 
+var section2 = function(){
+  $('body').removeClass();
+  $('body').addClass('second-color');
+  $('#about').addClass('hidden_left');
+  $('#about').removeClass('about');
+  $('#me2').addClass('hidden_right');
+  $('#me2').removeClass('me2');
+  $('#arr').addClass('hide');
+  $('.navbar1 a:nth-child(2)').addClass('second-color');
+  $('.navbar1 a:nth-child(1)').removeClass('first-color');
+  $('.navbar1 a:nth-child(3)').removeClass('third-color');
+}
+
+var section3 = function(){
+  $('body').removeClass();
+  $('body').addClass('third-color');
+  $('#about').removeClass('hidden_left');
+  $('#about').addClass('about');
+  $('#me2').removeClass('hidden_right');
+  $('#me2').addClass('me2');
+  $('.navbar1 a:nth-child(2)').removeClass('second-color');
+  $('.navbar1 a:nth-child(3)').addClass('third-color');
+  $('.navbar1 a:nth-child(4)').removeClass('fourth-color');
+  $('#testimonials').removeClass('scale-in');
+  $('#testimonials').addClass('scale-out');
+}
+
+var section4 = function(){
+  $('body').removeClass();
+  $('body').addClass('fourth-color');
+  $('#about').addClass('hidden_left');
+  $('#about').removeClass('about');
+  $('#me2').addClass('hidden_right');
+  $('#me2').removeClass('me2');
+  $('.navbar1 a:nth-child(3)').removeClass('third-color');
+  $('.navbar1 a:nth-child(4)').addClass('fourth-color');
+  $('.navbar1 a:nth-child(5)').removeClass('fifth-color');
+  $('#testimonials').removeClass('scale-out');
+  $('#testimonials').addClass('scale-in');
+  $('#contact').addClass('hidden_bottom');
+  $('#contact').removeClass('contact');
+}
+
+var section5 = function(){
+  $('body').removeClass();
+  $('body').addClass('fifth-color');
+  $('.navbar1 a:nth-child(4)').removeClass('fourth-color');
+  $('.navbar1 a:nth-child(5)').addClass('fifth-color');
+  $('#testimonials').removeClass('scale-in');
+  $('#testimonials').addClass('scale-out');
+  $('#contact').removeClass('hidden_bottom');
+  $('#contact').addClass('contact');
 }
 
 
 ////////////Materialize Dropdown Menu, carousel, and lightbox Initializations ///////////////////////
 $(document).ready(function(){
   $('.collapsible').collapsible();
-  $('.dropdown-trigger').dropdown({
-    constrainWidth: false,
-  });
+  $('.materialboxed').materialbox();
+  $('.dropdown-trigger').dropdown(
+    {
+      constrainWidth: false,
+    }
+  );
   $('.carousel').carousel(
-    { fullWidth: true,
+    { 
+      fullWidth: true,
       indicators: true,
     }
   );
-  autoplay();
   function autoplay() {
-      $('.carousel').carousel('next');
-      setTimeout(autoplay, 4500);
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 4500);
   };
-  $('.materialboxed').materialbox();
-  
+  autoplay();
 });
-///////////////////////////////////////////////////////////////
+
+//////////////////////////Window Scroll Top Locations/////////////////////////////////////
 
 $(window).scroll(function () {
   var scroll = $(window).scrollTop();
@@ -118,6 +119,7 @@ $(window).bind('scroll', function () {
       $('.navbar1').removeClass('sticky');
   } 
 });
+
 ///////////Word cloud/////////////
 ///////////////////http://www.goat1000.com/tagcanvas.php////////////////////////
 window.onload = function() {
@@ -128,7 +130,6 @@ window.onload = function() {
   }};
 
 window.onload = function() {
-    // set colour of text and outline of active tag
     TagCanvas.minSpeed = .005
     TagCanvas.textColour = '#ffffff';
     TagCanvas.outlineColour = 'transparent';
@@ -136,11 +137,8 @@ window.onload = function() {
     TagCanvas.wheelZoom = false;
     TagCanvas.initial = [.03,.05]
     TagCanvas.Start('myCanvas');
-
 };
-
-
-////////////////////////////http://www.goat1000.com/tagcanvas.php/////////////////////////////////
+///////////////http://www.goat1000.com/tagcanvas.php//////////////////////
 
 
 
